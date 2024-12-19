@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play 2048 Puzzle Game! A fun and addictive number puzzle game. Combine tiles to reach 2048. Download now or view the source code.">
+    <title>2048 Puzzle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <a href="#" class="brand">2048 Puzzle</a>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#screenshots">Screenshots</a></li>
+                    <li><a href="#download">Download</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content">
+            <h1>2048</h1>
+            <p>Swipe, Combine, and Win!</p>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Challenge Your Mind with the Ultimate Number Puzzle!</h2>
+            <div class="cta-buttons">
+                <a href="https://apkpure.com/2048/com.me24tech2048/download" class="btn">Play Now</a>
+                <a href="https://github.com" class="btn">View Source Code</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Game Section -->
+    <section id="about" class="about">
+        <h2>About 2048 Puzzle Game</h2>
+        <p>2048 is a fun and addictive number puzzle game where you swipe tiles to combine numbers and reach the coveted 2048 tile. It’s simple to play but challenging to master!</p>
+        <p><strong>Perfect for casual gaming!</strong></p>
+        <p>Developed for Southern Leyte State University – Tomas Oppus, BSIT 2nd Year.</p>
+        <p><strong>Developer:</strong> Shella P. Tagbak </p>
+        <p><strong>Email:</strong> tagabakshella05@gmail.com</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li><i class="fas fa-gamepad"></i> Easy swipe controls for intuitive gameplay.</li>
+            <li><i class="fas fa-mobile-alt"></i> Minimalistic design for a clean and focused experience.</li>
+            <li><i class="fas fa-bolt"></i> Dynamic animations and sound effects.</li>
+            <li><i class="fas fa-trophy"></i> Leaderboard and achievements for competitive players.</li>
+            <li><i class="fas fa-laptop"></i> Supports multiple devices with smooth performance.</li>
+        </ul>
+    </section>
+
+    <!-- Visual Media Section -->
+    <section id="screenshots" class="screenshots">
+        <h2>Game in Action</h2>
+        <div class="screenshot-grid">
+            <img src="images/Main_Menu.png" alt="Main Menu">
+            <img src="images/Mid_Game.png" alt="Mid-game">
+            <img src="images/New_Game.png" alt="New Game">
+            <img src="images/Game_Over.png" alt="Game Over">
+        </div>
+        <div class="video-container">
+            <h3>Game Trailer</h3>
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/GGW7jrFUlng" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <h2>Get the Game</h2>
+        <div class="download-buttons">
+            <a href="https://apkpure.com/2048/com.me24tech2048" class="btn">Download on Apkpure</a>
+            <a href="https://apkpure.com/2048/com.me24tech2048/download" class="btn">Download APK</a>
+        </div>
+    </section>
+
+    <!-- Source Code Section -->
+    <section id="source-code" class="source-code">
+        <h2>Explore the Code</h2>
+        <p>This game was developed using Unity, C#, and Android Studio. Check out the complete project source code for educational purposes!</p>
+        <a href="https://github.com/tagbakshella/2048.git" class="btn">View on GitHub</a>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="feedback">
+        <h2>We Value Your Feedback</h2>
+        <form action="#">
+            <label for="name">Name (optional):</label>
+            <input type="text" id="name" name="name" maxlength="50" placeholder="Your name (optional)">
+            <label for="email">Email (optional):</label>
+            <input type="email" id="email" name="email" maxlength="100" placeholder="Your email (optional)">
+            <label for="feedback">Feedback/Review:</label>
+            <textarea id="feedback" name="feedback" required minlength="10" maxlength="500" placeholder="Enter your feedback..."></textarea>
+            <button type="submit" class="btn">Send Feedback</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Shella P. Tagbak. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#" class="social-icon"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Feedback form submission
+        const form = document.querySelector('.feedback form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your feedback!');
+            form.reset();
+        });
+    </script>
+
+</body>
+</html>

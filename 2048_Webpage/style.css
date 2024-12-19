@@ -1,0 +1,266 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #d66cb3, #e586a1);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header .navbar .brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hero Banner Section */
+.hero {
+    background-image: url('game-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    color: white;
+    background-color: #f6c90e;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #f27a54;
+}
+
+/* About Section */
+.about {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Features Section */
+.features {
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features h2 {
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.features ul li {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Screenshots Section */
+.screenshots {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.screenshots h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.screenshot-grid .screenshot-item {
+    position: relative;
+}
+
+.screenshot-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.screenshot-grid .screenshot-item .label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+/* Download Section */
+.download {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.download h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.download .btn {
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    color: white;
+    background-color: #f6c90e;
+    transition: background-color 0.3s;
+}
+
+.download .btn:hover {
+    background-color: #f27a54;
+}
+
+/* Feedback Section */
+.feedback {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.feedback h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.feedback form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.feedback label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.feedback input,
+.feedback textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback button {
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    color: white;
+    background-color: #f6c90e;
+    border: none;
+    cursor: pointer;
+}
+
+.feedback button:hover {
+    background-color: #cd89af;
+}
+
+/* Footer Section */
+footer {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+    color: #555;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-icon {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #555;
+    text-decoration: none;
+}
+
+footer .social-icon:hover {
+    color: #f6c90e;
+}
